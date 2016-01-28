@@ -1,0 +1,26 @@
+{
+  "name": "node-crawler",
+  "version": "1.0.0",
+  "description": "Node.js web crawler and scraper",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
+  },
+  "engines": {
+    "node": "5.0.0",
+    "npm": "3.3.6"
+  },
+  "author": "Stephen Montana",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "debug": "^2.2.0",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4",
+    "json2csv": "^3.1.0",
+    "locus": "^1.2.0",
+    "moment": "^2.11.1",
+    "request": "^2.67.0"
+  }
+}

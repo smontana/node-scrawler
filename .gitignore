@@ -1,0 +1,4 @@
+node_modules
+.env
+tmp/*.csv
+lib/user-config.js
