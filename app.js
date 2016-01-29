@@ -27,22 +27,22 @@ var un = process.env.USER_NAME;
 var pw = process.env.PASSWORD;
 
 var urls = {
-  landing_page: 'http://inventoryplus.dealertrack.com/backend',
-  login_url: 'http://inventoryplus.dealertrack.com/backend/login',
-  report_url: 'http://inventoryplus.dealertrack.com/backend/chat/managed_chat_report',
-  agent_report_url: 'http://inventoryplus.dealertrack.com/backend/chat/user_chat_facts'
+  landing_page: process.env.LANDING_PAGE,
+  login_url: process.env.LOGIN_URL,
+  report_url: process.env.REPORT_URL,
+  agent_report_url: process.env.AGENT_REPORT_URL
 };
 
-var date_begin = '01/17/2016';
-var date_end = '01/23/2016';
-var chat_org_eid = '66rGbhW2CdqtdXICBDz53g';
+var date_begin = process.env.BEGIN_DATE;
+var date_end = process.env.END_DATE;
+var chat_org_eid = process.env.ORG_EID;
 
 var report_properties = {
   period: 'custom',
   date_begin: date_begin,
   date_end: date_end,
   chatter_eid: '',
-  chat_org_eid: '66rGbhW2CdqtdXICBDz53g'
+  chat_org_eid: chat_org_eid
 };
 
 var login_data = {
